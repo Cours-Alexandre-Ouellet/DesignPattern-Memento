@@ -20,6 +20,9 @@ namespace Memento
             gestionnaire.AjouterManipulation(new Manipulation("Amener à ébulition l'eau"));
             gestionnaire.AjouterManipulation(new Manipulation("Ajouter 50 g de potassium pur"));
 
+            // Contenu du chaudron après cette manipulation
+            Console.WriteLine(gestionnaire.Chaudron);
+
             // BOOM !
 
             gestionnaire.AnnulerDerniereManipulation();
